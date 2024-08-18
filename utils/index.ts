@@ -77,4 +77,45 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
   url.searchParams.append('angle', `${angle}`);
 
   return `${url}`;
-} 
+}
+
+
+// export const getCars = async () => {
+//   const baseUrl = "https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla"
+//   const headers = {
+//     "x-rapidapi-key": process.env.NEXT_PUBLIC_RAPID_API_KEY || "",
+//     'x-rapidapi-host': 'cars-by-api-ninjas.p.rapidapi.com'
+//   }
+
+//   try {
+
+//     const resonse = await fetch(baseUrl, { headers: headers })
+//     const result = await resonse.json()
+
+//     console.log("result", result)
+
+//     return result
+
+//   } catch (error) {
+//     console.log(error)
+//   }
+
+// }
+
+
+// const url = 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla';
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     'x-rapidapi-key': '18a5e3ce68msheac1bdd074f81f4p1744e0jsne4e7eb07723a',
+//     'x-rapidapi-host': 'cars-by-api-ninjas.p.rapidapi.com'
+//   }
+// };
+
+// try {
+//   const response = await fetch(url, options);
+//   const result = await response.text();
+//   console.log(result);
+// } catch (error) {
+//   console.error(error);
+// }
